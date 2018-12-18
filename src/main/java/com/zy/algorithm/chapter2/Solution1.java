@@ -2,6 +2,11 @@ package com.zy.algorithm.chapter2;
 
 import com.zy.algorithm.common.Node;
 
+/**
+ * 打印两个有序链表的公共部分
+ * 时间复杂度O（n）
+ * @author Min Zhao
+ */
 public class Solution1 {
 
     public void printCommonPart(Node head1, Node head2){

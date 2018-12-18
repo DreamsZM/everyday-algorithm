@@ -32,6 +32,31 @@ public class Solution1 {
             }
             System.out.println();
         } else {
+            int currentRow = tR;
+            int currentCol = tC;
+            while (currentCol<= dC){
+                System.out.print( matrix[currentRow][currentCol++] + " ");
+            }
+            currentRow++;
+        }
+    }
+
+    private static void printEdge1(int[][] matrix, int tR, int tC, int dR, int dC ){
+        if (matrix == null){
+            return;
+        }
+
+        if (tR == dR){
+            while (tC <= dC){
+                System.out.print(matrix[tR][tC++] + " ");
+            }
+            System.out.println();
+        } else if (tC == dC){
+            while (tR <= dR){
+                System.out.print(matrix[tR++][tC] + " ");
+            }
+            System.out.println();
+        } else {
             int i = tC;
             while (i <= dC){
                 System.out.print(matrix[tR][i++] + " ");
